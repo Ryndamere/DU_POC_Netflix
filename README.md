@@ -59,7 +59,7 @@ print(country_df_clean.nunique(axis=0))
 |season_title | 692|
 dtype: int64
 
-This data will be visualized to actually show how Netflix is beings used across the countries
+This data will be visualized to actually show how Netflix is being used across the countries and is interactive:
 
 Global Top 10 by category:
 https://public.tableau.com/app/profile/ryan.ernst/viz/DU_POC_Netflix/Top10TVMovies?publish=yes
