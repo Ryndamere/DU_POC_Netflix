@@ -1,7 +1,7 @@
 import psycopg2
 import pandas as pd 
 import csv 
-conn = psycopg2.connect("host=localhost dbname=postgres user=postgres password=Waj62mWaj62m")
+conn = psycopg2.connect("host=localhost dbname=postgres user=postgres password=*******")
 cur = conn.cursor()
 
 country_df = pd.read_csv('du_poc/country_weekly.csv', encoding='unicode_escape')
