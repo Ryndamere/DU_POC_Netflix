@@ -10,6 +10,8 @@ Most of the data is text strings so no quantitfying way to show the amount of sh
 
 About 50% of the show season_title will be blank. Becuase it is comparing top 10 TV shows and Movies and movies don't have a season_title.
 
+Here are some of the stats on the data set:
+
 ```python
 country_df = pd.read_csv('country_weekly.csv', encoding='unicode_escape')
 country_df_clean = country_df.drop(["country_iso2", "cumulative_weeks_in_top_10"], axis=1)
@@ -57,4 +59,13 @@ print(country_df_clean.nunique(axis=0))
 |season_title | 692|
 dtype: int64
 
+This data will be visualized to actually show how Netflix is beings used across the countries
 
+Global Top 10 by category:
+https://public.tableau.com/app/profile/ryan.ernst/viz/DU_POC_Netflix/Top10TVMovies?publish=yes
+
+Global Most views from Top 10:
+https://public.tableau.com/app/profile/ryan.ernst/viz/DU_POC_NetflixTopViews/Top10Views?publish=yes
+
+Top TV/Movies by Country:
+https://public.tableau.com/app/profile/ryan.ernst/viz/DU_POC_Netflix_Graph/GraphTopTVMovies?publish=yes
