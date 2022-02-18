@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np 
 import psycopg2.extras as extras
 from io import StringIO
-conn = psycopg2.connect("host=localhost dbname=postgres user=postgres password=Waj62mWaj62m")
+conn = psycopg2.connect("host=localhost dbname=postgres user=postgres password=*****")
 cur = conn.cursor()
 
 country_df = pd.read_csv('du_poc/country_weekly.csv', encoding='unicode_escape')
