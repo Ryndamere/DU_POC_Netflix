@@ -4,11 +4,11 @@ A Proof of concept for DU that uses a Kaggle dataset and to be visualized to be 
 
 ## Data Profiling
 
-The data was imported from CP-1252 to UTF-8 and has corrupted some of the foreign characters in the movies that com from Netflix. We made the mistake of manually chaning this data to similar english character in excel.
+The data was imported from CP-1252 to UTF-8 and has corrupted some of the foreign characters in the movies that came from Netflix. We made the mistake of manually changing this data to similar english characters in excel.
 
-Most of the data is text strings so no quantitfing way to show the amount of show titles.
+Most of the data is text strings so no quantitfying way to show the amount of show titles.
 
-about 50% of the show season_title will be blank. Becuase it is comparing top 10 Tv shows and Movies and movies don't have season_title.
+About 50% of the show season_title will be blank. Becuase it is comparing top 10 TV shows and Movies and movies don't have a season_title.
 
 ```python
 country_df = pd.read_csv('country_weekly.csv', encoding='unicode_escape')
